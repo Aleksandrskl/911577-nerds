@@ -1,0 +1,17 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.user-navigation {
+width: 21px;
+
+height: 21px;
+
+display: inline-block;
+}
