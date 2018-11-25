@@ -8,10 +8,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.user-navigation {
-width: 21px;
 
-height: 21px;
-
-display: inline-block;
+:focus {
+  border-bottom: 3px solid #ff0000;
 }
