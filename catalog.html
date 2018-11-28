@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог Нердс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
@@ -28,21 +30,21 @@
 	<form class="product-filter" action="https://echo.htmlacademy.ru/" method="post">
 		<fieldset>
 		<legend>Сетка:</legend>
-		<ul>
+		<ul class="filter-opt">
 			<li class="filter-option">
-				<input type="radio" name="grid" value="adaptiv" id="filter-grid-adaptiv" checked>
+				<input class="filter-input" type="radio" name="grid" value="adaptiv" id="filter-grid-adaptiv" checked >
 				<label for="filter-grid-adaptiv" >
 					Адаптивная
 				</label>	
 			</li>
 			<li class="filter-option">
-				<input type="radio" name="grid" value="fix" id="filter-grid-fix">
+				<input class="filter-input" type="radio" name="grid" value="fix" id="filter-grid-fix">
 				<label for="filter-grid-fix" >
 					Фиксированная
 				</label>
 			</li>
 			<li class="filter-option">
-				<input type="radio" name="grid" value="rub" id="filter-grid-rub">
+				<input class="filter-input" type="radio" name="grid" value="rub" id="filter-grid-rub">
 				<label for="filter-grid-rub" >
 					Резиновая
 				</label>

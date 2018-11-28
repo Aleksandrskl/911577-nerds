@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,5 +20,186 @@
 }
 
 :focus {
-  border-bottom: 3px solid #ff0000;
+ border-top: 3px solid #ff0000;
+}
+
+
+
+body {
+   margin: 0;
+
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #000000;
+   text-transform: none;
+
+   background-color: #ffffff;
+}
+
+a { 
+    text-decoration: none;	
+}
+
+.main-navigation{
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}	
+
+.site-navigation,
+.user-navigation,
+.services-list {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:current,
+.user-navigation a:current {
+	color: #fb565a;
+}
+
+.container h3 {
+	font-size: 24px;
+	line-height: 30px;
+	text-align: left;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.index-columns {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.button1 {
+	font: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase; 
+
+    background-color: #fb565a;
+
+}
+
+.button2 {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+    color: #ffffff; 
+    font-weight: 500;
+    text-transform: uppercase;
+
+	background-color: #00ca74;
+}
+
+.button3 {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+    color: #ffffff; 
+    font-weight: 500;
+    text-transform: uppercase;
+
+	background-color: #efc84a;	
+}
+
+a.button1:hover {
+	background-color: #e74246;
+}
+a.button1:active {
+	background-color: #d7373b;
+
+}
+a.button2:hover {
+	background-color: #00bc6c;
+}
+a.button2:active {
+	background-color: #00aa62;
+}
+
+a.button3:hover {
+	background-color: #eab534;
+}
+a.button3:active {
+	background-color: #e5a722;
+}
+
+
+.footer-social b {
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 700;
+	text-align: left;
+
+}
+
+.footer-social p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	text-align: left;
+}
+
+       /*Вторая страница*/
+.inner-page {
+	font-size: 16px;
+    line-height: 20px;
+	color: #283136;
+}
+  
+.main-navigation h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.product-filter fieldset {
+	border: none;
+}
+
+.product-filter legend {
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
+	font-weight: 700;
+}
+
+.product-filter ul {
+	list-style: none;
+	line-height: 20px;
+}
+
+input:hover + label {
+  color: #4d4d4d;
+}
+
+input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+
+  opacity: 0.5;
 }
