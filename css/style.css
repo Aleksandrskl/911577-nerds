@@ -215,6 +215,7 @@ a.price:active {
 	outline: 2px solid green;
 }
 .main-navigation {
+	display: flex;
 	min-height: 130px;
 }
 .main-header-logo {
