@@ -231,9 +231,11 @@ a.price:active {
 	margin-bottom: 80px;
 	min-height: 130px;
 	outline: 2px solid green;
+	background-color: #eeeeee;
 }
 .main-navigation {
 	display: flex;
+	justify-content: space-between;
 	min-height: 130px;
 }
 .main-header-logo {
@@ -250,10 +252,6 @@ a.price:active {
 	padding: 0;
 	outline: 2px solid aqua;
 	min-height: 70px;
-}
-.main-navigatio-wrapper .container {
-	display:flex ;
-	justify-content : space-between ;
 }
 .navigation-cart .shopping-basket {
 	padding-left: 41px;
