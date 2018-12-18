@@ -599,7 +599,7 @@ svg:active path {
     animation: shake 0.6s;
 }
 .map-contacts {
-    position: relative;
+    position: absolute;
     bottom: 51px;
     left: 93px;
 	margin: 0;
