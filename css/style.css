@@ -10,15 +10,12 @@ html {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -72,20 +69,20 @@ a.current {
     line-height: 30px;
     text-align: left;
     font-weight: 700;
-    margin: 19px 0px 16px;
+    margin: 26px 0px 16px;
     text-transform: uppercase;
 }
 .services p {
 	width: 270px;
     line-height: 24px;
     font-size: 16px;
-    margin-bottom: 45px;
+    margin-bottom: 46px;
 }
 .button {
 	font: inherit;
 	font-size: 16px;
 	line-height: 18px;
-	padding: 15px 40px;
+	padding: 16px 40px;
 	border-radius: 3px;
 	text-align: center;
 	font-weight: 500;
@@ -103,11 +100,13 @@ a.current {
 	background-color: #efc84a;
 }
 a.button-red:hover,
-a.slider-item-button:hover {
+a.slider-item-button:hover,
+a.contacts-button:hover {
 	background-color: #e74246;
 }
 a.button-red:active,
-a.slider-item-button:active {
+a.slider-item-button:active,
+a.contacts-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 	background-color: #d7373b;
@@ -127,6 +126,12 @@ a.button-orange:active {
 	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);	
 	background-color: #e5a722;
+}
+.main-header-logo {
+    background-image: url("../img/nerds-logo.svg");
+}
+.logo-catalog:active {
+    background-image: url("../img/nerds-logo.png");
 }
 .main-navigation h1 {
 	font-size: 54px;
@@ -156,7 +161,7 @@ a.button-orange:active {
 	line-height: 20px;
 	font-weight: 400;
 	color: #283136;
-	padding: 10px 0 10px 0px;
+	padding: 0px 20px 20px;
 }
 .filter input:hover + label {
     color: #4d4d4d;
@@ -234,7 +239,7 @@ a.price:active {
 	flex-wrap: wrap;
 	width: 708px;
 	margin: 0;
-	padding: 0;
+	padding: 3px;
 	padding-right: 20px;
 	padding-top: 75px;
 	align-items: flex-start;
@@ -285,7 +290,7 @@ ul.navigation li {
 	margin-right: 0;
 }
 .main-footer {
-	padding:0;
+	padding-top: 80px;
 	margin-top:0;
     min-height: 217px; 
 }
@@ -303,14 +308,14 @@ ul.navigation li {
 }
 .footer-social {
  	width: 261px;
- 	padding: 69px 139px 70px 0px;
+ 	padding: 62px 0px 70px 0px;
  	margin: 0;
  	margin-right: 139px;
  	min-height: 79px;
  }
 .footer-copyright {
  	width: 560px;
- 	padding: 78px 0px; 
+ 	padding: 69px 0px; 
  	margin: 0;
  	min-height: 63px;
  }
@@ -396,7 +401,7 @@ img {
 .slider-item:nth-child(1) {
     background-image: url("../img/slide-1.png");
     background-repeat: no-repeat;
-    background-position: 94% -6px;
+    background-position: 93% -8px;
 }
 .slider-item:nth-child(2) {
     background-image: url("../img/slide-2.png");
@@ -443,7 +448,7 @@ img {
 .slider-item p {
     max-width: 432px;
     margin: 0;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
 }
 .slider-item-button {
     display: block;
@@ -549,12 +554,6 @@ img {
 .modal-close:hover {
 	background-image: red;
 }
-svg:hover path {
-	fill: #fb565a;
-}
-svg:active path {
-	fill: #ffeeee;
-}
 .modal-show {
   display: block;
 }
@@ -600,8 +599,8 @@ svg:active path {
 }
 .map-contacts {
     position: absolute;
-    bottom: 51px;
-    left: 93px;
+    bottom: 60px;
+    left: 20px;
 	margin: 0;
 	padding: 49px 50px 47px;
 	width: 319px;
@@ -610,7 +609,7 @@ svg:active path {
 }
 .map-contacts b {
 	display: block;
-	margin: 0 0 24px;
+	margin: 0 0 22px;
 	font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -618,7 +617,7 @@ svg:active path {
 }
 .map-contacts p{
 	width: 220px;
-    margin: 18px 0 0;
+    margin: 18px 2px 0;
     line-height: 18px;
     color: #666;
 }
@@ -626,36 +625,39 @@ svg:active path {
 	display: block;
 	width: 219px;
 	height: 50px;
+    padding: 18px 40px;
     margin-top: 36px;
-
 }
 .modal-map {
 	position: relative;
-	top: 316px;
 }
-.htmlacademy img:hover {
-	background-image: url("../img/logo-1-png-copy.png");
+.container-map {
+    position: relative;
 }
-.borodinski img:hover {
-	background-image: url(../img/logo-2-png-copy.png);
+.sponsor-link:hover {
+    opacity: 1;
 }
-.pink img:hover {
-	background-image: url(../img/logo-3-png-copy.png);
+.sponsor-link:active {
+    opacity: .1;
 }
-.mishka img:hover {
-	background-image: url(../img/logo-4-png-copy.png);
-}
+.sponsor-link {
+    opacity: .2;
+}    
+
 .features-site {
 	display: flex;
 	align-items: flex-end;
-	margin: 0 auto;
-	padding: 76px 0 73px;
+    margin: 0 auto;
+    padding: 76px 2px 73px;
 	border-bottom: solid 2px #eee;
+    background-image: url(../img/nerds-illustration.png);
+    background-repeat: no-repeat;
+    background-position: right 40px;
 }
 .features b {
 	width: 650px;
 	height: 87px;
-	margin: 0;
+    margin: 0;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
@@ -663,14 +665,14 @@ svg:active path {
 .features p {
 	width: 617px;
 	height: 40px;
+    margin: 32px 0 0;
 	line-height: 24px;
-	margin: 32px 0 0;
     color: #283136;
 }
 .features h3 {
-	margin: 38px 0 0;
     font-weight: 700;
     font-size: 16px;
+    margin: 47px 0 0;
     text-transform: uppercase;
 }
 .about-list {
@@ -687,16 +689,15 @@ svg:active path {
 .about-subtitle {
 	font-weight: 700;
 	font-size: 16px;
+    margin-bottom: 18px;
+    margin-left: 34px;
 	text-transform: uppercase;
-	margin: 38px 0 0;
 }
 .about-options {
 	width: 208px;
     padding: 16px 0;
-    margin-top : 45px;
 	font-size: 45px;
 	line-height: 45px;
-	text-align: left;
 	font-weight: 700;
 }
 .about-param {
@@ -721,15 +722,18 @@ svg:active path {
 }
 .catalog-filter {
 	width: 260px;
-	padding-top: 133px;
 	margin-right: 140px;
+    margin-top: 284px;
 }
-.filter-group {
+.filter-group-grid {
 	margin: 35px 0 0;
     padding: 0;
 }
+.filter-group-feat {
+    margin: 10px 0 0;
+    padding: 0;
+}
 .catalog-subtitle {
-    margin-bottom: 6px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -738,9 +742,16 @@ svg:active path {
 .filter-item {
 	padding: 0;
 }
+.filter-input::before {
+    width: 17px;
+    height: 17px;
+    border: solid 4px #222;
+    border-radius: 50%;
+
+}
 .filter-button {
 	width: 100%;
-    margin-top: 39px;
+    margin-top: 12px;
     background-color: #eeeeee;
     padding: 17px 40px 15px;
     font-weight: 500;
@@ -773,6 +784,7 @@ svg:active path {
 }
 .catalog-container {
 	display: flex;
+    margin-bottom: 57px;
 }
 .web-site-templates {
 	display: flex;
@@ -782,23 +794,21 @@ svg:active path {
 	width: 760px;
     text-align: center;
 }
-.catalog-description-sedona {
-	position: absolute;
-	left: 495px;
-	top: 874px;
+.catalog-item:hover .catalog-description {
+    display:block;
+}
+.catalog-item {
+    position: relative;
+}
+.catalog-description{
+    position: absolute;
+    left: 0;
+    bottom: 32px;
 	width: 360px;
 	height: 231px;
-    padding: 30px 80px 43px 80px;
+    padding: 26px 80px 43px 80px;
 	background-color: #eeeeee;
 	display: none;
-}
-.pop-up-sedona:hover .catalog-description-sedona,
-.pop-up-pink:hover .catalog-description-pink,
-.pop-up-barbershop:hover .catalog-description-barbershop, 
-.pop-up-mishka:hover .catalog-description-mishka, 
-.pop-up-aplus:hover .catalog-description-aplus, 
-.pop-up-kvast:hover .catalog-description-kvast  {
-  display: block;
 }
 .product-name {
     font-size: 17px;
@@ -808,11 +818,12 @@ svg:active path {
     color: #000000;
 }
 .product-info {
+    width: 202px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 14px;
+    margin-bottom: 44px;
     color: #666666;
 }
 .price {
@@ -823,55 +834,4 @@ svg:active path {
     font-weight: 500;
     color: #ffffff;
     border-radius: 3px;
-}
-.catalog-description-pink {
-    position: absolute;
-    right: 94px;
-    top: 874px;
-    width: 360px;
-    height: 231px;
-    padding: 30px 80px 43px 80px;
-    background-color: #eeeeee;
-    display: none;
-}
-.catalog-description-barbershop {
-    position: absolute;
-    left: 495px;
-    top: 1523px;
-    width: 360px;
-    height: 231px;
-    padding: 30px 80px 43px 80px;
-    background-color: #eeeeee;
-    display: none;
-}
-.catalog-description-mishka {
-    position: absolute;
-    right: 94px;
-    top: 1523px;
-    width: 360px;
-    height: 231px;
-    padding: 30px 80px 43px 80px;
-    background-color: #eeeeee;
-    display: none;
-}
-.catalog-description-aplus {
-    position: absolute;
-    right: 494px;
-    top: 2172px;
-    width: 360px;
-    height: 231px;
-    padding: 30px 80px 43px 80px;
-    background-color: #eeeeee;
-    display: none;
-    
-}
-.catalog-description-kvast {
-    position: absolute;
-    right: 94px;
-    top: 2172px;
-    width: 360px;
-    height: 231px;
-    padding: 30px 80px 43px 80px;
-    background-color: #eeeeee;
-    display: none;
 }
