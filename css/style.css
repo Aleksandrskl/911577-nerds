@@ -304,6 +304,7 @@ ul.navigation li {
     padding: 80px 0;
     margin: 0 auto;
     list-style: none;
+    overflow: auto;
     min-height: 190px;
     border-bottom: solid 2px #eee;
 }
@@ -317,6 +318,11 @@ ul.navigation li {
 .main-footer {
     padding-top: 81px;
     margin-top:0;
+    min-height: 217px; 
+}
+.footer-catalog {
+    padding: 0;
+    margin: 0;
     min-height: 217px; 
 }
 .main-footer .container {
@@ -421,7 +427,7 @@ img {
     vertical-align: top;
     width: 18px;
     height: 18px;
-    padding: 8px;
+    padding: 17px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -477,8 +483,8 @@ img {
     left: 50%;
     top: 50%;
     z-index: 2;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     margin: -4px;
     background-color: inherit;
     border: 2px solid #c1c1c1;
@@ -705,6 +711,7 @@ img {
 .mapa {
     width: 100%;
     height: 416px;
+    background: #eeeeee url(../img/mapa.jpg) no-repeat center top;
     border: 0;
 }
 .map-contacts {
@@ -902,7 +909,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 56px;
+    margin-bottom: 43px;
 }
 .web-site-templates {
     display: -webkit-box;
@@ -1015,4 +1022,54 @@ img {
 }
 .filter-input:disabled + label {
     opacity: 0.1;
+}
+.pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 28px;
+    list-style: none;
+}
+.pagination-item:last-child {
+    margin-right: 0;
+}
+.pagination-item {
+    margin-right: 11px;
+}
+.pagination-link {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 50px;
+    padding: 16px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 3px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: 0;
+}
+.pagination-link-current {
+    padding: 13px 16px;
+    background-color: transparent;
+    border: solid 3px #dbdbdb;
+    cursor: default;
+}
+.pagination-link-next {
+    width: 260px;
+}
+.pagination-link:not(.pagination-link-current):hover {
+    background-color: #dfdfdf;
+}
+.pagination-link:not(.pagination-link-current):active {
+    -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+    color: rgba(0,0,0,.3);
 }
