@@ -1,5 +1,5 @@
 # Личный проект «Нёрдс»
-
+* Ссылка на сайт :  nerds.github.io
 * Студент: [Oleksandr Skliar](https://up.htmlacademy.ru/htmlcss/23/user/911577).
 * Наставник: [ Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
 
